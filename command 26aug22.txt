@@ -1,0 +1,22 @@
+UPDATE table_name
+SET column1 = value1, column2 = value2...., columnN = valueN
+WHERE [condition];
+
+SQL> UPDATE CUSTOMERS
+SET ADDRESS = 'Pune'
+WHERE ID = 6;
+
+
+SQL> UPDATE CUSTOMERS
+SET ADDRESS = 'Pune', SALARY = 1000.00;
+
+SQL> DELETE FROM CUSTOMERS
+WHERE ID = 6;
+
+
+        DML  -----1------>DATA MANIPULATION LANGUAGE ()(INSERT,
+    UPDATE ,DELETE) 
+
+        DDL ------2      >DATA DEFINATION LANGUAGE(CREATE,DROP,ALTER)   
+
+       
