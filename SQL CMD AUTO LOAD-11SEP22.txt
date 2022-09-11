@@ -1,0 +1,3 @@
+select er.session_id, db_name(er.database_id)
+, case when charindex( 'create proc', st.text) > 0 and charindex( 'begin', st.text) > 0 then rtrim(ltrim(replace(replace(replace(replace( replace( replace( SUBSTRING(st.text, charindex( 'create proc', st.text) + 11 , charindex( 'begin', st.text)- charindex( 'create proc', st.text)-11), 'dbo', ''), '[', ''), ']', ''), 'as', ''), '.', ''), 'edure ', ''))) end [proc_exec]
+, SUBSTRING(st.text, (er.statement_start_offset/2)+1, ((CASE er.statement_end_offs
