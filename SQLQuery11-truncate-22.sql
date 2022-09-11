@@ -10,3 +10,6 @@ delete from world_info
 where Name ='algeria'
 
 truncate table world_info
+
+use Employees
+select * from dbo.Employees
