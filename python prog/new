@@ -1,0 +1,9 @@
+dd = int(input("Enter The Number: = "))
+bb=1
+while(bb<=10):
+    print(dd,"x",bb,"=",dd*bb)
+    bb=bb+1
+   import datetime
+
+t = datetime.datetime.now()
+print(t)
