@@ -2,6 +2,14 @@ int1 = int(input("Please enter 1st Interger: "))
 #int2 = int(input("Please enter 2nd integer: "))
 #multply = int1*int2
 #sum = int1+int2
+while (True):
+    try:
+        user_input= input("Enter the grade: ")
+        if user_input == "quit" or user_input == "": break
+        grade_value = float(user_input)
+        if grade_value<0: break                  
+
+
 if int1 <90:
     print(int1,"Rating--> (1) -->Need Improvement")
    
